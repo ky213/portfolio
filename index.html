@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" href="img/suitcase.png">
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
         crossorigin="anonymous"></script>
+    <link rel="icon" href="img/suitcase.png">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Dosis" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -20,9 +20,9 @@
     <title>Portfolio</title>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <a class="navbar-brand pl-5 text-info" href="#" style="font-family: 'Lobster', cursive;font-size:2.5rem">
+<body style="padding-top: 86px">
+    <nav id="navbar" class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <a class="navbar-brand pl-5 text-info" href="/" style="font-family: 'Lobster', cursive;font-size:2.5rem">
             <img src="img/suitcase.png" width="30" height="30" alt=""> Yk
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -44,7 +44,7 @@
                     </a>
                 </li>
                 <li class="nav-item mx-3">
-                    <a class="nav-link text-info" href="#about" style="font-family: 'Lobster', cursive;font-size:1.8rem">
+                    <a class="nav-link text-info" href="#work" style="font-family: 'Lobster', cursive;font-size:1.8rem">
                         <i class="fa fa-code"></i> Work</a>
                 </li>
                 <li class="nav-item mx-3">
@@ -54,12 +54,132 @@
             </ul>
         </div>
     </nav>
-    <div class="jumbotron">
-        <h1 class="display-4 text-center">I am a full-stack web developer</h1>
-        <p class="lead text-center">This is my Expo room, here you can find every everything related to me and my work</p>
-        <hr class="my-4">
-        <div class="container">
-            <div class="row justify-content-center">
+    <div data-spy="scroll" data-target="#navbar" data-offset="0" >
+        <div id="home" class="jumbotron">
+            <h1 class="display-4 text-center">I am a full-stack web developer</h1>
+            <p class="lead text-center">This is my Expo room, here you can find every everything related to me and my work</p>
+            <hr class="my-4">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-2 text-center my-2">
+                        <a href="https://twitter.com" class="btn btn-primary " target="_blank">
+                            <i class="fab fa-twitter mr-3"></i>Twitter
+                        </a>
+                    </div>
+                    <div class="col-sm-2 text-center my-2">
+                        <a href="https://github.com/ky213" class="btn btn-dark" target="_blank">
+                            <i class="fab fa-github mr-3"></i>Github
+                        </a>
+                    </div>
+                    <div class="col-sm-2 text-center my-2">
+                        <a href="https://www.linkedin.com/in/yaaqoub-keddaoui-a12996b2" class="btn  text-white" style="background: #0077b5" target="_blank">
+                            <i class="fab fa-linkedin mr-3"></i>Linkedin
+                        </a>
+                    </div>
+                    <div class="col-sm-2 text-center my-2">
+                        <a href="https://www.freecodecamp.org/fccb4f4808a-a0f4-440d-94e7-0f7aca4acb09" class="btn btn-success" target="_blank">
+                            <i class="fab fa-free-code-camp mr-3"></i>FreeCodeCamp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About section -->
+        <div id="about" class="container">
+            <div class="row mb-2">
+                <p class="lead"> My name is Yaakoub keddaoui, I'm 27 and I'm a full-stack Javascript developer. My passion for the web began
+                    since my childhood, but I couln't gain any of the neccessary skills until the democartisation of learning
+                    on the net. So I started following some free and paid online bootcamps till the point I felt my self
+                    really confortable with the latest and most in-demand skills to start a new career in web development.
+                </p>
+            </div>
+            <h3 class="display-4 text-center my-5" style="font-family: 'Dosis', sans-serif">My beloved skills:</h3>
+            <!-- Skills -->
+            <div class="row justify-content-center my-5 py-5">
+                <div class="col-sm-4">
+                    <h2 class="pb-5">Front-End</h2>
+                    <h5>
+                        <i class="fab fa-html5"></i> HTML</h5>
+                    <h5>
+                        <i class="fab fa-css3"></i> CSS</h5>
+                    <h5>
+                        <i class="fab fa-js-square"></i> Javascript</h5>
+                    <h5>
+                        <i class="fab fa-react"></i> React & React-Native</h5>
+                </div>
+                <div class="col-sm-4">
+                    <h2 class="pb-5">Back-End</h2>
+                    <h5>
+                        <i class="fab fa-node"></i> Nodejs (with ExpressJs)</h5>
+                    <h5>
+                        <i class="fa fa-fire"></i> Google firebase</h5>
+                    <h5>
+                        <i class="fa fa-code"></i> API development</h5>
+
+                </div>
+                <div class="col-sm-4">
+                    <h2 class="pb-5">Others</h2>
+                    <h5>
+                        <i class="fab fa-git-square"></i> Git & Github</h5>
+                    <h5>
+                        <i class="fab fa-linux"></i> Linux Envirenment</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio -->
+    <h1 id="work" class="display-4 text-center my-5 py-5" style="font-family: 'Dosis', sans-serif;">My Portfolio</h1>
+    <div class="container mt-5">
+        <div class="card-deck">
+            <div class="card">
+                <img class="card-img-top" src="img/palestinecharity.png" alt="palestine_charity">
+                <div class="card-body">
+                    <h5 class="card-title">Palestine Chariy</h5>
+                    <p class="card-text">This is my first project in which I could deploy the very basic technologies (vanilla)</p>
+                    <a href="https://palestinecharity.surge.sh" target="_blank" class="card-link">Visit</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="img/tributepage.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Tribute page</h5>
+                    <p class="card-text">This is a small starter project.It is a tributepage about prophet muhammad peace be uppon him</p>
+                    <a href="https://codepen.io/ky213/full/PQaxyJ" target="_blank" class="card-link">Visit</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="img/userlogin.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">User login system</h5>
+                    <p class="card-text">In this prject I used Google, firebase, Facebook, Tiwtter APIs to create a simple boilerplate that I'm
+                        intending to reuse every time I want to start an application based on user authentication</p>
+                    <a href="" target="_blank">Visit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 class="display-4 text-center my-5 py-5" style="font-family: 'Dosis', sans-serif;">Contact Me</h1>
+    <!-- Contact Me -->
+    <div id="contact" class="container pb-5">
+        <div class="row">
+            <div class="col-sm-6">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea class="form-control" id="message" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+            </div>
+            <div class="col-sm-6 pt-4">
+                <h5>Email: y.keddaoui@gmail.com</h5>
+                <h5>Adress: 21st, washington DC, USA</h5>
+                <h5>Phone: +1 5555-444-33</h5>
                 <div class="col-sm-2 text-center my-2">
                     <a href="https://twitter.com" class="btn btn-primary " target="_blank">
                         <i class="fab fa-twitter mr-3"></i>Twitter
@@ -75,134 +195,21 @@
                         <i class="fab fa-linkedin mr-3"></i>Linkedin
                     </a>
                 </div>
-
                 <div class="col-sm-2 text-center my-2">
                     <a href="https://www.freecodecamp.org/fccb4f4808a-a0f4-440d-94e7-0f7aca4acb09" class="btn btn-success" target="_blank">
                         <i class="fab fa-free-code-camp mr-3"></i>FreeCodeCamp
                     </a>
                 </div>
-
-
-
-            </div>
-        </div>
-    </div>
-    <!-- About section -->
-    <div id="about" class="container">
-        <div class="row mb-2">
-            <p class="lead"> My name is Yaakoub keddaoui, I'm 27 and I'm a full-stack Javascript developer. My passion for the web began since
-                my childhood, but I couln't gain any of the neccessary skills until the democartisation of learning on the
-                net. So I started following some free and paid online bootcamps till the point I felt my self really confortable
-                with the latest and most in-demand skills to start a new career in web development.
-            </p>
-            <h3 class="display-4 mx-auto">My beloved skills:</h3>
-        </div>
-        <!-- Skills -->
-        <div class="row justify-content-center ">
-            <div class="col-sm-4">
-                <h2>Front-End</h2>
-                <h5>
-                    <i class="fab fa-html5"></i> HTML</h5>
-                <h5>
-                    <i class="fab fa-css3"></i> CSS</h5>
-                <h5>
-                    <i class="fab fa-js-square"></i> Javascript</h5>
-                <h5>
-                    <i class="fab fa-react"></i> React & React-Native</h5>
-            </div>
-            <div class="col-sm-4">
-                <h2>Back-End</h2>
-                <h5>
-                    <i class="fab fa-node"></i> Nodejs (with ExpressJs)</h5>
-                <h5>
-                    <i class="fa fa-fire"></i> Google firebase</h5>
-                <h5>
-                    <i class="fa fa-code"></i> API development</h5>
-
-            </div>
-            <div class="col-sm-4">
-                <h2>Others</h2>
-                <h5>
-                    <i class="fab fa-git-square"></i> Git & Github</h5>
-                <h5>
-                    <i class="fab fa-linux"></i> Linux Envirenment</h5>
             </div>
         </div>
     </div>
     </div>
-    <!-- Portfolio -->
-    <h1 class="display-4 text-center">My Portolio</h1>
-    <div class="container mt-5">
-        <div class="card-deck">
-            <div class="card">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content
-                        is a little bit longer.</p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card
-                        has even longer content than the first to show that equal height action.</p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container mt-5">
-        <div class="card-deck">
-            <div class="card">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content
-                        is a little bit longer.</p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card
-                        has even longer content than the first to show that equal height action.</p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                </div>
-            </div>
-        </div>
+    <!-- Footer -->
+    <div class="container-fluid bg-dark p-3">
+        <footer class="">
+
+        </footer>
     </div>
 </body>
+
 </html>
